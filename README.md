@@ -1,4 +1,4 @@
-# Happinessa and Well Being Analysis
+# Happiness and Well Being Analysis
 
 ## Project Overview
 This project analysis the trend in happiness and well-being using a world happiness report data. While other approaches and techniques can be used for this project, I employed pandas and matplotlib for the purpose of accessing my studies on the aforementioned topics.
