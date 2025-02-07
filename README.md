@@ -65,3 +65,4 @@ top_10_Happy.plot(x='country', y= 'happiness_score', kind='bar', title='Ten Top 
 
 #  Plot the least 10 happy countries on a column chart
 least_10_Happy.plot(x='country', y= 'happiness_score', kind='bar', title='Ten Least Happy Countries', color='red')
+
