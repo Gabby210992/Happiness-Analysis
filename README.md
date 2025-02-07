@@ -37,7 +37,10 @@ In the initial data preparatory phase, I performed the following task
 ### Data Analysis
 Include some interesting codes/features worked with
 ```python
-
+# Importing the libraries 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 
