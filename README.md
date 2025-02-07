@@ -42,5 +42,26 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Importing the dataset by getting the path of the file
+FilePath = r"C:\Users\GABRIEL\Downloads\WHR_2023.csv"
 
+# Reading the dataset
+df = pd.read_csv(FilePath)
+df.head()
 
+# Exploring the dataset
+df.info()
+
+# Top 10 happy countries
+top_10_Happy = df.nlargest(10, 'happiness_score')
+print(f"The top 10 happiest countries are: \n{top_10_Happy[['country', 'happiness_score']]}")
+
+# Least 10 happy countries
+least_10_Happy = df.nsmallest(10, 'happiness_score')
+print(f"The least 10 happiest countries are: \n{least_10_Happy[['country', 'happiness_score']]}")
+
+# Plotting on the top 10 happy countries on a column chart
+top_10_Happy.plot(x='country', y= 'happiness_score', kind='bar', title='Ten Top Happiest Country', color='green')
+
+#  Plot the least 10 happy countries on a column chart
+least_10_Happy.plot(x='country', y= 'happiness_score', kind='bar', title='Ten Least Happy Countries', color='red')
